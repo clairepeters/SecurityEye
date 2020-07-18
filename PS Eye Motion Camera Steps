@@ -1,0 +1,16 @@
+Install motion pi:
+  sudo apt-get install motion
+  
+Install ffmpeg, for audio and video streaming:
+  sudo apt-get install ffmpeg
+  
+in /etc/motion/motion.conf (nano /etc/motion/motion.conf) change these entries to the ones below:
+  webcam_localhost off
+  control_localhost off
+  width 640
+  height 640
+ 
+Start motion pi with the command:
+  motion -n
+  
+ If you get any errors try changing the ports that video streaming is on. It is by default 8081
